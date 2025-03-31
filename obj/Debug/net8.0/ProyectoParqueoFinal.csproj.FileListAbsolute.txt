@@ -172,3 +172,4 @@ C:\Users\josep\source\repos\ProyectoParqueoFinal\obj\Debug\net8.0\refint\Proyect
 C:\Users\josep\source\repos\ProyectoParqueoFinal\obj\Debug\net8.0\ProyectoParqueoFinal.pdb
 C:\Users\josep\source\repos\ProyectoParqueoFinal\obj\Debug\net8.0\ProyectoParqueoFinal.genruntimeconfig.cache
 C:\Users\josep\source\repos\ProyectoParqueoFinal\obj\Debug\net8.0\ref\ProyectoParqueoFinal.dll
+C:\Users\josep\source\repos\ProyectoParqueoFinal\obj\Debug\net8.0\ProyectoParqueoFinal.sourcelink.json

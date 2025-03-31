@@ -196,8 +196,7 @@ namespace ProyectoParqueoFinal.Migrations
                     b.HasOne("ProyectoParqueoFinal.Models.Vehiculo", "Vehiculo")
                         .WithMany("Bitacoras")
                         .HasForeignKey("VehiculosIdVehiculo")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("Parqueo");
 
