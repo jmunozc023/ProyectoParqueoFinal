@@ -1,0 +1,335 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\controllers\\seleccionparqueocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:controllers\\seleccionparqueocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\controllers\\cambiopasswordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:controllers\\cambiopasswordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\controllers\\administrarvehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:controllers\\administrarvehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\controllers\\administrarusuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:controllers\\administrarusuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\controllers\\administracionparqueocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:controllers\\administracionparqueocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\controllers\\modificarvehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:controllers\\modificarvehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\controllers\\modificarusuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:controllers\\modificarusuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\controllers\\modificarparqueoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:controllers\\modificarparqueoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\views\\modificarparqueos\\modificarparqueos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:views\\modificarparqueos\\modificarparqueos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\views\\modificarvehiculos\\modificarvehiculos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:views\\modificarvehiculos\\modificarvehiculos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\viewmodels\\modificarparqueosvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:viewmodels\\modificarparqueosvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\viewmodels\\administracionparqueosvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:viewmodels\\administracionparqueosvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\views\\administracionparqueo\\administracionparqueo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:views\\administracionparqueo\\administracionparqueo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\views\\modificarusuarios\\modificarusuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:views\\modificarusuarios\\modificarusuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\models\\parqueo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:models\\parqueo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 559,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LogInController.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\LogInController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LogInController.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\LogInController.cs",
+              "RelativeToolTip": "Controllers\\LogInController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwEUAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T09:36:04.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CambioPasswordController.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\CambioPasswordController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CambioPasswordController.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\CambioPasswordController.cs",
+              "RelativeToolTip": "Controllers\\CambioPasswordController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAgwFIAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T09:35:29.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdministrarVehiculosController.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\AdministrarVehiculosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdministrarVehiculosController.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\AdministrarVehiculosController.cs",
+              "RelativeToolTip": "Controllers\\AdministrarVehiculosController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAgwHIAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T09:35:03.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ModificarParqueosController.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\ModificarParqueosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ModificarParqueosController.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\ModificarParqueosController.cs",
+              "RelativeToolTip": "Controllers\\ModificarParqueosController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAUwDAAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T09:01:40.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SeleccionParqueoController.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\SeleccionParqueoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SeleccionParqueoController.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\SeleccionParqueoController.cs",
+              "RelativeToolTip": "Controllers\\SeleccionParqueoController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDIAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T08:23:21.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ModificarParqueos.cshtml",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\ModificarParqueos\\ModificarParqueos.cshtml",
+              "RelativeDocumentMoniker": "Views\\ModificarParqueos\\ModificarParqueos.cshtml",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\ModificarParqueos\\ModificarParqueos.cshtml",
+              "RelativeToolTip": "Views\\ModificarParqueos\\ModificarParqueos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAACsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T09:07:14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ModificarParqueosVM.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\ViewModels\\ModificarParqueosVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ModificarParqueosVM.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\ViewModels\\ModificarParqueosVM.cs",
+              "RelativeToolTip": "ViewModels\\ModificarParqueosVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T09:00:24.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AdministracionParqueosVM.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\ViewModels\\AdministracionParqueosVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\AdministracionParqueosVM.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\ViewModels\\AdministracionParqueosVM.cs",
+              "RelativeToolTip": "ViewModels\\AdministracionParqueosVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T08:56:11.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdministracionParqueoController.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\AdministracionParqueoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdministracionParqueoController.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\AdministracionParqueoController.cs",
+              "RelativeToolTip": "Controllers\\AdministracionParqueoController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwC8AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T08:16:53.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ModificarVehiculos.cshtml",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\ModificarVehiculos\\ModificarVehiculos.cshtml",
+              "RelativeDocumentMoniker": "Views\\ModificarVehiculos\\ModificarVehiculos.cshtml",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\ModificarVehiculos\\ModificarVehiculos.cshtml",
+              "RelativeToolTip": "Views\\ModificarVehiculos\\ModificarVehiculos.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwCoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T09:07:33.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AdministracionParqueo.cshtml",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\AdministracionParqueo\\AdministracionParqueo.cshtml",
+              "RelativeDocumentMoniker": "Views\\AdministracionParqueo\\AdministracionParqueo.cshtml",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\AdministracionParqueo\\AdministracionParqueo.cshtml",
+              "RelativeToolTip": "Views\\AdministracionParqueo\\AdministracionParqueo.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEMAAADLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T08:37:43.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Parqueo.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Models\\Parqueo.cs",
+              "RelativeDocumentMoniker": "Models\\Parqueo.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Models\\Parqueo.cs",
+              "RelativeToolTip": "Models\\Parqueo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T08:16:01.149Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 99,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "03236bed-e2ad-499b-b6e2-0ad2dfad5199",
+        "Display": 1,
+        "X": 367,
+        "Y": 174,
+        "Width": 1078,
+        "Height": 527,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdministrarUsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\AdministrarUsuariosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdministrarUsuariosController.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\AdministrarUsuariosController.cs",
+              "RelativeToolTip": "Controllers\\AdministrarUsuariosController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAgwFsAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T06:48:56.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ModificarUsuarios.cshtml",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\ModificarUsuarios\\ModificarUsuarios.cshtml",
+              "RelativeDocumentMoniker": "Views\\ModificarUsuarios\\ModificarUsuarios.cshtml",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\ModificarUsuarios\\ModificarUsuarios.cshtml",
+              "RelativeToolTip": "Views\\ModificarUsuarios\\ModificarUsuarios.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowCEAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T07:34:34.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ModificarVehiculosController.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\ModificarVehiculosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ModificarVehiculosController.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\ModificarVehiculosController.cs",
+              "RelativeToolTip": "Controllers\\ModificarVehiculosController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwDQAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T09:01:56.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ModificarUsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\ModificarUsuariosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ModificarUsuariosController.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\ModificarUsuariosController.cs",
+              "RelativeToolTip": "Controllers\\ModificarUsuariosController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwDsAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T01:43:52.437Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

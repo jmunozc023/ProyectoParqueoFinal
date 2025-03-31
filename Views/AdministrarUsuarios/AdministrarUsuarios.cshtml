@@ -1,0 +1,101 @@
+﻿@model ProyectoParqueoFinal.ViewModels.AdministrarUsuariosVM;
+
+<html style="background-color: blueviolet;">
+<head>
+    <title>Administracion de Usuarios</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body style="background-color: blueviolet;">
+    <div class="row mt-5 justify-content-center" style="background-color: blueviolet;">
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Registro de Usuarios</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-controller="AdministrarUsuarios" asp-action="AdministrarUsuarios" method="post">
+                        <input class="form-control mb-3" type="text" placeholder="Nombre" required asp-for="Nombre" />  
+                       <input class="form-control mb-3" type="text" placeholder="Apellido" required asp-for="Apellido" />  
+                       <input class="form-control mb-3" type="email" placeholder="Correo electronico" required asp-for="CorreoElectronico" />  
+                       <input class="form-control mb-3" type="password" placeholder="Password" required asp-for="Password" />  
+                       <input class="form-control mb-3" type="date" placeholder="Fecha de Nacimiento" required asp-for="FechaNacimiento" />
+					   <input class="form-control mb-3" type="text" placeholder="Cédula" required asp-for="Cedula" />
+					   <input class="form-control mb-3" type="text" placeholder="Número de Carnet" required asp-for="NumeroCarne" />
+                       <select class="form-control mb-3" placeholder="Rol" required asp-for="Rol">  
+                           <option disabled selected value="Rol">Rol</option>  
+                           <option value="Administrador">Administrador</option>  
+                           <option value="Seguridad">Seguridad</option>
+                           <option value="Estudiante">Estudiante</option>
+                           <option value="Administrativo">Administrativo</option>
+                       </select>  
+                       <button class="btn btn-primary btn-block" type="submit">Registrar</button>  
+                       @if (ViewData["Mensaje"] != null)  
+                       {  
+                           <div class="alert alert-danger" role="alert">
+								@ViewData["Mensaje"]
+							</div>  
+                       }  
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Modificar/Eliminar Usuarios</h3>
+                </div>
+                <div class="card-body">
+                    <h3>Usuarios registrados</h3>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Correo</th>
+                                <th>Fecha de nacimiento</th>
+                                <th>Cédula</th>
+								<th>Número de Carnet</th>
+                                <th>Rol</th>
+								<th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (ViewData["Usuarios"] != null)
+                            {
+                                var usuarios = ViewData["Usuarios"] as List<Usuario>;
+                                foreach (var usuario in usuarios)
+                                {
+                                    <tr>
+                                        <td>@usuario.Nombre</td>
+                                        <td>@usuario.Apellido</td>
+                                        <td>@usuario.CorreoElectronico</td>
+										<td>@usuario.FechaNacimiento</td>
+										<td>@usuario.Cedula</td>
+										<td>@usuario.NumeroCarne</td>
+                                        <td>@usuario.Rol</td>
+                                        <td>
+                                            <form asp-controller="ModificarUsuarios" asp-action="ModificarUsuarios" method="get">
+                                                <input type="hidden" name="correo" value="@usuario.CorreoElectronico" />
+                                                <button class="btn btn-info btn-sm" type="submit">Modificar</button>
+                                            </form>
+                                            <form asp-controller="AdministrarUsuarios" asp-action="EliminarUsuario" method="post" onsubmit="return confirm('¿Está seguro que desea eliminar este usuario?');">
+                                                <input type="hidden" name="IdUsuario" value="@usuario.IdUsuario" />
+                                                <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                                            </form>
+
+                                        </td>
+                                    </tr>
+
+                                }
+
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

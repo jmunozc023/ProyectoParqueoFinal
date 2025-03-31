@@ -1,0 +1,37 @@
+﻿@model ProyectoParqueoFinal.ViewModels.ModificarParqueosVM;
+
+<html style="background-color: blueviolet;">
+<head>
+    <title>Modificar Parqueos</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body style="background-color: blueviolet;">
+    <div class="row mt-5 justify-content-center" style="background-color: blueviolet;">
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Modificar Parqueo</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-controller="ModificarParqueos" asp-action="ModificarParqueos" method="post">
+                        <input class="form-control mb-3" type="text" placeholder="Nombre del parqueo" required asp-for="NombreParqueo" value="@Model.NombreParqueo" />
+                        <input class="form-control mb-3" type="text" placeholder="Ubicacion" required asp-for="Ubicacion" value="@Model.Ubicacion" />
+                        <input class="form-control mb-3" type="text" placeholder="Capacidad Automoviles" required asp-for="CapacidadAutomoviles" value="@Model.CapacidadAutomoviles" />
+                        <input class="form-control mb-3" type="text" placeholder="Capacidad Motocicletas" required asp-for="CapacidadMotocicletas" value="@Model.CapacidadMotocicletas" />
+                        <input class="form-control mb-3" type="text" placeholder="Capacidad Ley 7600" required asp-for="CapacidadLey7600" value="@Model.CapacidadLey7600" />
+                        <button class="btn btn-primary btn-block" type="submit">Modificar</button>
+                        @if (ViewData["Mensaje"] != null)
+                        {
+                            <div class="alert alert-danger" role="alert">
+                                @ViewData["Mensaje"]
+                            </div>
+                        }
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

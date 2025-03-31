@@ -1,0 +1,114 @@
+﻿@model ProyectoParqueoFinal.ViewModels.AdministrarVehiculosVM;
+
+<html style="background-color: blueviolet;">
+<head>
+    <title>Administracion de Vehiculos</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body style="background-color: blueviolet;">
+    <div class="row mt-5 justify-content-center" style="background-color: blueviolet;">
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Registro de Vehiculos</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-controller="AdministrarVehiculos" asp-action="AdministrarVehiculos" method="post">
+                        <select class="form-control mb-3" asp-for="UsuariosIdUsuario">
+                            <option disabled selected value="">Seleccione un usuario</option>
+                            @if (ViewData["Usuarios"] != null)
+                            {
+                                var usuarios = ViewData["Usuarios"] as List<Usuario>;
+                                foreach (var usuario in usuarios)
+                                {
+                                    <option value="@usuario.IdUsuario">@usuario.Nombre @usuario.Apellido</option>
+                                }
+                            }
+                        </select>
+                        <input class="form-control mb-3" type="text" placeholder="Marca" required asp-for="@Model.Marca" />
+                        <input class="form-control mb-3" type="text" placeholder="Modelo" required asp-for="@Model.Modelo" />
+                        <input class="form-control mb-3" type="text" placeholder="Color" required asp-for="@Model.Color" />
+                        <input class="form-control mb-3" type="text" placeholder="Numero de Placa" required asp-for="@Model.NumeroPlaca" />
+                        <select class="form-control mb-3" placeholder="Tipo de vehiculo" required asp-for="@Model.TipoVehiculo">
+                            <option disabled selected value="TipoVehiculo">Tipo de vehiculo</option>
+                            <option value="Automovil">Automóvil</option>
+                            <option value="Motocicleta">Motocicleta</option>
+                        </select>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" asp-for="@Model.UsaEspacio7600" value="true" id="Checkbox1" />
+                            <label class="form-check-label" for="Checkbox1">
+                                Requiere Espacio Ley 7600
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-block" type="submit">Registrar</button>
+                        @if (ViewData["Mensaje"] != null)
+                        {
+                            <div class="alert alert-danger" role="alert">
+                                @ViewData["Mensaje"]
+                            </div>
+                        }
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Modificar/Eliminar Vehiculos</h3>
+                </div>
+                <div class="card-body">
+                    <h3>Vehiculos registrados</h3>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Marca</th>
+                                <th>Modelo</th>
+                                <th>Color</th>
+                                <th>Numero de placa</th>
+                                <th>Tipo de vehiculo</th>
+                                <th>Ley 7600</th>
+                                <th>Dueño</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (ViewData["Vehiculos"] != null)
+                            {
+                                var vehiculos = ViewData["Vehiculos"] as List<Vehiculo>;
+                                foreach (var vehiculo in vehiculos)
+                                {
+                                    <tr>
+                                        <td>@vehiculo.Marca</td>
+                                        <td>@vehiculo.Modelo</td>
+                                        <td>@vehiculo.Color</td>
+                                        <td>@vehiculo.NumeroPlaca</td>
+                                        <td>@vehiculo.TipoVehiculo</td>
+                                        <td>@vehiculo.UsaEspacio7600</td>
+                                        <td>@vehiculo.Usuario.Nombre @vehiculo.Usuario.Apellido</td>
+                                        <td>
+                                            <form asp-controller="ModificarVehiculos" asp-action="ModificarVehiculos" method="get">
+                                                <input type="hidden" name="IdVehiculo" value="@vehiculo.IdVehiculo" />
+                                                <button class="btn btn-info btn-sm" type="submit">Modificar</button>
+                                            </form>
+                                            <form asp-controller="AdministrarVehiculos" asp-action="EliminarVehiculo" method="post" onsubmit="return confirm('¿Está seguro que desea eliminar este vehiculo?');">
+                                                <input type="hidden" name="IdVehiculo" value="@vehiculo.IdVehiculo" />
+                                                <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                                            </form>
+
+                                        </td>
+                                    </tr>
+
+                                }
+
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

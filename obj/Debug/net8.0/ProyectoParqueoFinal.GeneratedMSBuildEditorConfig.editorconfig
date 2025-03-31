@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProyectoParqueoFinal
+build_property.RootNamespace = ProyectoParqueoFinal
+build_property.ProjectDir = C:\Users\josep\source\repos\ProyectoParqueoFinal\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\josep\source\repos\ProyectoParqueoFinal
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/AdministracionParqueo/AdministracionParqueo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWNpb25QYXJxdWVvXEFkbWluaXN0cmFjaW9uUGFycXVlby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/AdministrarUsuarios/AdministrarUsuarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXJVc3Vhcmlvc1xBZG1pbmlzdHJhclVzdWFyaW9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/AdministrarVehiculos/AdministrarVehiculos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXJWZWhpY3Vsb3NcQWRtaW5pc3RyYXJWZWhpY3Vsb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/CambioPassword/CambiarPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtYmlvUGFzc3dvcmRcQ2FtYmlhclBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/LogIn/LogIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9nSW5cTG9nSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/ModificarParqueos/ModificarParqueos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kaWZpY2FyUGFycXVlb3NcTW9kaWZpY2FyUGFycXVlb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/ModificarUsuarios/ModificarUsuarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kaWZpY2FyVXN1YXJpb3NcTW9kaWZpY2FyVXN1YXJpb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/ModificarVehiculos/ModificarVehiculos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kaWZpY2FyVmVoaWN1bG9zXE1vZGlmaWNhclZlaGljdWxvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/SeleccionParqueo/SeleccionarParqueo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VsZWNjaW9uUGFycXVlb1xTZWxlY2Npb25hclBhcnF1ZW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-1dggy0qbqt

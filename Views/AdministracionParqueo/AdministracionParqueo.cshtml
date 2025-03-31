@@ -1,0 +1,88 @@
+﻿@model ProyectoParqueoFinal.ViewModels.AdministracionParqueosVM;
+
+<html style="background-color: blueviolet;">
+<head>
+    <title>Administracion de Parqueos</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body style="background-color: blueviolet;">
+    <div class="row mt-5 justify-content-center" style="background-color: blueviolet;">
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Registro de Parqueos</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-controller="AdministracionParqueo" asp-action="AdministracionParqueo" method="post">
+                        <input class="form-control mb-3" type="text" placeholder="Nombre del parqueo" required asp-for="NombreParqueo" />
+                        <input class="form-control mb-3" type="text" placeholder="Ubicacion" required asp-for="Ubicacion" />
+                        <input class="form-control mb-3" type="text" placeholder="Capacidad para automoviles" required asp-for="CapacidadAutomoviles" />
+                        <input class="form-control mb-3" type="text" placeholder="Capacidad para motocicletas" required asp-for="CapacidadMotocicletas" />
+                        <input class="form-control mb-3" type="text" placeholder="Capacidad para Ley 7600" required asp-for="CapacidadLey7600" />
+                        <button class="btn btn-primary btn-block" type="submit">Registrar</button>
+                        @if (ViewData["Mensaje"] != null)
+                        {
+                            <div class="alert alert-danger" role="alert">
+                                @ViewData["Mensaje"]
+                            </div>
+                        }
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Modificar/Eliminar Parqueos</h3>
+                </div>
+                <div class="card-body">
+                    <h3>Parqueos registrados</h3>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Nombre del parqueo</th>
+                                <th>Ubicacion</th>
+                                <th>Capacidad Automoviles</th>
+                                <th>Capacidad Motocicletas</th>
+                                <th>Capacidad para Ley 7600</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (ViewData["Parqueos"] != null)
+                            {
+                                var parqueos = ViewData["Parqueos"] as List<Parqueo>;
+                                foreach (var parqueo in parqueos)
+                                {
+                                    <tr>
+                                        <td>@parqueo.NombreParqueo</td>
+                                        <td>@parqueo.Ubicacion</td>
+                                        <td>@parqueo.CapacidadAutomoviles</td>
+                                        <td>@parqueo.CapacidadMotocicletas</td>
+                                        <td>@parqueo.CapacidadLey7600</td>
+                                        <td>
+                                            <form asp-controller="ModificarParqueos" asp-action="ModificarParqueos" method="get">
+                                                <input type="hidden" name="IdParqueo" value="@parqueo.IdParqueo" />
+                                                <button class="btn btn-info btn-sm" type="submit">Modificar</button>
+                                            </form>
+                                            <form asp-controller="AdministracionParqueo" asp-action="EliminarParqueos" method="post" onsubmit="return confirm('¿Está seguro que desea eliminar este parqueo?');">
+                                                <input type="hidden" name="IdParqueo" value="@parqueo.IdParqueo" />
+                                                <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                                            </form>
+
+                                        </td>
+                                    </tr>
+
+                                }
+
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿@model ProyectoParqueoFinal.ViewModels.SeleccionParqueoVM;
+@{
+	Layout = null;
+}
+
+<html style="background-color: blueviolet;">
+<head>
+	<title>Seleccion de parqueo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body style="background-color: blueviolet;">
+	<div class="container">
+		<div class="row mt-5 justify-content-center" style="background-color: blueviolet;">
+			<div class="col-sm-12 col-md-8 col-lg-5">
+				<h1 class="text-center">Sistema de Parqueos ULACIT</h1>
+				<div class="card">
+					<div class="card-header">
+						<h3 class="text-center">Seleccion de parqueo</h3>
+					</div>
+					<div class="card-body">
+						<p>Seleccione el parqueo al que fue designado</p>
+						<form asp-controller="SeleccionParqueo" asp-action="SeleccionarParqueo" method="post">
+							<select class="form-control mb-3" asp-for="NombreParqueo">
+								@foreach (var parqueo in (List<Parqueo>)ViewData["Parqueos"]!)
+								{
+									<option value="@parqueo.NombreParqueo">@parqueo.NombreParqueo</option>
+								}
+							</select>
+							<input type="hidden" name="UserEmail" value="@ViewData["UserEmail"]" />
+							<input type="hidden" name="UserRole" value="@ViewData["UserRole"]" />
+							<button class="btn btn-primary btn-block" type="submit">Ingresar</button>
+							@if (ViewData["Mensaje"] != null)
+							{
+								<div class="alert alert-danger" role="alert">
+									@ViewData["Mensaje"]
+								</div>
+							}
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

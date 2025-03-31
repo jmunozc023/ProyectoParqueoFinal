@@ -1,0 +1,43 @@
+﻿@model ProyectoParqueoFinal.ViewModels.ModificarVehiculosVM;
+
+<html style="background-color: blueviolet;">
+<head>
+    <title>Modificar Vehiculos</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body style="background-color: blueviolet;">
+    <div class="row mt-5 justify-content-center" style="background-color: blueviolet;">
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Modificar Vehiculo</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-controller="ModificarVehiculos" asp-action="ModificarVehiculos" method="post">
+                        <input class="form-control mb-3" type="text" placeholder="Marca" required asp-for="Marca" value="@Model.Marca" />
+                        <input class="form-control mb-3" type="text" placeholder="Modelo" required asp-for="Modelo" value="@Model.Modelo" />
+                        <input class="form-control mb-3" type="text" placeholder="Color" required asp-for="Color" value="@Model.Color" />
+                        <input class="form-control mb-3" type="text" placeholder="Numero de Placa" required asp-for="NumeroPlaca" value="@Model.NumeroPlaca" />
+                        <input class="form-control mb-3" type="text" placeholder="Tipo de Vehiculo" required asp-for="TipoVehiculo" value="@Model.TipoVehiculo" />
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" asp-for="UsaEspacio7600" value="true" id="Checkbox1" />
+                            <label class="form-check-label" for="Checkbox1">
+                                Requiere Espacio Ley 7600
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-block" type="submit">Modificar</button>
+                        @if (ViewData["Mensaje"] != null)
+                        {
+                            <div class="alert alert-danger" role="alert">
+                                @ViewData["Mensaje"]
+                            </div>
+                        }
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
