@@ -33,8 +33,10 @@ namespace ProyectoParqueoFinal.Controllers
                 return View();
             }
             var vehiculos = await _appDBcontext.Vehiculos.ToListAsync();
-            var bitacoras = await _appDBcontext.Bitacoras.Include(b => b.Vehiculo).Where(b => b.ParqueoIdParqueo == parqueo.IdParqueo).ToListAsync();
-            
+            var bitacoras = await _appDBcontext.Bitacoras
+                  .Include(b => b.Vehiculo)
+                  .Where(b => b.ParqueoIdParqueo == parqueo.IdParqueo && b.Vehiculo != null)
+                  .ToListAsync();            
             var ingresosAutomoviles = bitacoras.Count(b => b.TipoIngreso == "Entrada" && b.Vehiculo.TipoVehiculo == "Automovil" && b.Vehiculo.UsaEspacio7600 != true);
             var salidasAutomoviles = bitacoras.Count(b => b.TipoIngreso == "Salida" && b.Vehiculo.TipoVehiculo == "Automovil" && b.Vehiculo.UsaEspacio7600 != true);
             var espaciosDisponiblesAutos = parqueo.CapacidadAutomoviles - ingresosAutomoviles + salidasAutomoviles;
@@ -103,16 +105,33 @@ namespace ProyectoParqueoFinal.Controllers
             }
             else if (accion == "Salida")
             {
-                await RegistrarBitacora("Salida", modelo.NumeroPlaca, parqueo.IdParqueo, vehiculo.IdVehiculo);
-                TempData["Mensaje"] = "Salida registrada correctamente.";
+                if (vehiculo == null)
+                {
+                    var bitacoraSinRegistro = await _appDBcontext.Bitacoras
+                        .FirstOrDefaultAsync(b => b.NumeroPlaca == modelo.NumeroPlaca && b.VehiculosIdVehiculo == null && b.TipoIngreso == "Entrada" && b.ParqueoIdParqueo == parqueo.IdParqueo);
+
+                    if (bitacoraSinRegistro == null)
+                    {
+                        TempData["Error"] = "El vehículo no está registrado y no tiene un ingreso previo permitido.";
+                        return RedirectToAction("GestionParqueo");
+                    }
+
+                    await RegistrarBitacora("Salida", modelo.NumeroPlaca, parqueo.IdParqueo, null);
+                    TempData["Mensaje"] = "Salida registrada correctamente para un vehículo sin registro previo.";
+                }
+                else
+                {
+                    await RegistrarBitacora("Salida", modelo.NumeroPlaca, parqueo.IdParqueo, vehiculo?.IdVehiculo);
+                    TempData["Mensaje"] = "Salida registrada correctamente.";
+                }
             }
             return RedirectToAction("GestionParqueo");
         }
         private int CalcularEspaciosDisponibles(string tipoVehiculo, Parqueo parqueo, bool usaEspacio7600)
         { 
             var bitacoras = _appDBcontext.Bitacoras.Include(b =>b.Vehiculo).Where(b => b.ParqueoIdParqueo == parqueo.IdParqueo).ToList();
-            int ingresos = bitacoras.Count(b => b.TipoIngreso == "Entrada" && b.Vehiculo.TipoVehiculo == tipoVehiculo && b.Vehiculo.UsaEspacio7600 == usaEspacio7600);
-            int salidas = bitacoras.Count(b => b.TipoIngreso == "Salida" && b.Vehiculo.TipoVehiculo == tipoVehiculo && b.Vehiculo.UsaEspacio7600 == usaEspacio7600);
+            int ingresos = bitacoras.Count(b => b.TipoIngreso == "Entrada" && b.Vehiculo != null && b.Vehiculo.TipoVehiculo == tipoVehiculo && b.Vehiculo.UsaEspacio7600 == usaEspacio7600);
+            int salidas = bitacoras.Count(b => b.TipoIngreso == "Salida" && b.Vehiculo != null && b.Vehiculo.TipoVehiculo == tipoVehiculo && b.Vehiculo.UsaEspacio7600 == usaEspacio7600);
             if (tipoVehiculo == "Automovil")
                 return parqueo.CapacidadAutomoviles - ingresos + salidas;
             else if (tipoVehiculo == "Motocicleta")
