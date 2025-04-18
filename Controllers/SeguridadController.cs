@@ -75,13 +75,16 @@ namespace ProyectoParqueoFinal.Controllers
                 var intentosFallidosPrevios = await _appDBcontext.Bitacoras.CountAsync(b => b.VehiculosIdVehiculo == 0 && b.ParqueoIdParqueo == parqueo.IdParqueo && b.TipoIngreso == "Intento fallido");
                 if (intentosFallidosPrevios > 0)
                 {
-                    await RegistrarBitacora("Intento fallido", modelo.NumeroPlaca, parqueo.IdParqueo, 0);
+                    await RegistrarBitacora("Intento fallido", modelo.NumeroPlaca, parqueo.IdParqueo, vehiculo?.IdVehiculo);
                     TempData["Error"] = "El vehiculo no esta registrado y no puede ingresar nuevamente.";
                     return RedirectToAction("GestionParqueo");
                 }
                 else
                 {
-                    await RegistrarBitacora("Entrada", modelo.NumeroPlaca, parqueo.IdParqueo, 0);
+                    await RegistrarBitacora("Entrada", modelo.NumeroPlaca, parqueo.IdParqueo, vehiculo?.IdVehiculo);
+                    // Si el vehiculo no existe, se permite la entrada sin registro
+                    // pero se recomienda registrar el vehiculo para futuros ingresos
+
                     TempData["Mensaje"] = "Ingreso permitido sin registro del vehiculo. Por favor, registre el vehiculo para proximos ingresos. ";
                     return RedirectToAction("GestionParqueo");
                 }
@@ -91,7 +94,7 @@ namespace ProyectoParqueoFinal.Controllers
                 var espaciosDisponibles = CalcularEspaciosDisponibles(vehiculo.TipoVehiculo, parqueo, vehiculo.UsaEspacio7600);
                 if (espaciosDisponibles <= 0)
                 {
-                    await RegistrarBitacora("Intento fallido", modelo.NumeroPlaca, parqueo.IdParqueo, vehiculo?.IdVehiculo ?? 0);
+                    await RegistrarBitacora("Intento fallido", modelo.NumeroPlaca, parqueo.IdParqueo, vehiculo?.IdVehiculo);
                     TempData["Error"] = "No hay espacios disponibles para el tipo de vehiculo.";
                     return RedirectToAction("GestionParqueo");
                 }
@@ -118,21 +121,29 @@ namespace ProyectoParqueoFinal.Controllers
                 return parqueo.CapacidadLey7600 - ingresos + salidas;
             return 0;
         }
-        private async Task RegistrarBitacora(string tipoIngreso, string numeroPlaca, int idParqueo, int idVehiculo)
+        private async Task RegistrarBitacora(string tipoIngreso, string numeroPlaca, int idParqueo, int? idVehiculo)
         {
-            if (idVehiculo == 0)
+            try
             {
-                idVehiculo = -1;
+
+                var bitacora = new Bitacora
+                {
+                    TipoIngreso = tipoIngreso,
+                    FechaHora = DateTime.Now,
+                    VehiculosIdVehiculo = idVehiculo,
+                    NumeroPlaca = numeroPlaca,
+                    ParqueoIdParqueo = idParqueo
+                };
+
+                _appDBcontext.Bitacoras.Add(bitacora);
+                await _appDBcontext.SaveChangesAsync();
             }
-            var bitacora = new Bitacora
+            catch (DbUpdateException ex)
             {
-                TipoIngreso = tipoIngreso,
-                FechaHora = DateTime.Now,
-                VehiculosIdVehiculo = idVehiculo,
-                ParqueoIdParqueo = idParqueo
-            };
-            _appDBcontext.Bitacoras.Add(bitacora);
-            await _appDBcontext.SaveChangesAsync();
+                // Log the exception or handle it as needed
+                TempData["Error"] = "An error occurred while saving the changes. Please try again.";
+                throw;
+            }
         }
         //    if (vehiculo == null)
         //    {

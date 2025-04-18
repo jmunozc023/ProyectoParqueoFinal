@@ -37,7 +37,8 @@ namespace ProyectoParqueoFinal.Data
                 tb.Property(col => col.IdBitacora).UseIdentityColumn().ValueGeneratedOnAdd();
                 tb.Property(col => col.TipoIngreso).HasMaxLength(25).IsRequired();
                 tb.Property(col => col.FechaHora).IsRequired();
-                tb.HasOne(col => col.Vehiculo).WithMany(col => col.Bitacoras).HasForeignKey(col => col.VehiculosIdVehiculo);
+                tb.Property(col => col.NumeroPlaca).HasMaxLength(15);
+                tb.HasOne(col => col.Vehiculo).WithMany(col => col.Bitacoras).HasForeignKey(col => col.VehiculosIdVehiculo).OnDelete(DeleteBehavior.NoAction);
                 tb.HasOne(col => col.Parqueo).WithMany(col => col.Bitacoras).HasForeignKey(col => col.ParqueoIdParqueo);
             });
             modelBuilder.Entity<Vehiculo>(tb =>

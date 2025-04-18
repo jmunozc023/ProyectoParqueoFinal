@@ -153,6 +153,7 @@ C:\Users\josep\source\repos\ProyectoParqueoFinal\obj\Debug\net8.0\ProyectoParque
 C:\Users\josep\source\repos\ProyectoParqueoFinal\obj\Debug\net8.0\ProyectoParqueoFinal.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\josep\source\repos\ProyectoParqueoFinal\obj\Debug\net8.0\ProyectoParqueoFinal.RazorAssemblyInfo.cache
 C:\Users\josep\source\repos\ProyectoParqueoFinal\obj\Debug\net8.0\ProyectoParqueoFinal.RazorAssemblyInfo.cs
+C:\Users\josep\source\repos\ProyectoParqueoFinal\obj\Debug\net8.0\ProyectoParqueoFinal.sourcelink.json
 C:\Users\josep\source\repos\ProyectoParqueoFinal\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\josep\source\repos\ProyectoParqueoFinal\obj\Debug\net8.0\scopedcss\bundle\ProyectoParqueoFinal.styles.css
 C:\Users\josep\source\repos\ProyectoParqueoFinal\obj\Debug\net8.0\scopedcss\projectbundle\ProyectoParqueoFinal.bundle.scp.css
@@ -172,4 +173,3 @@ C:\Users\josep\source\repos\ProyectoParqueoFinal\obj\Debug\net8.0\refint\Proyect
 C:\Users\josep\source\repos\ProyectoParqueoFinal\obj\Debug\net8.0\ProyectoParqueoFinal.pdb
 C:\Users\josep\source\repos\ProyectoParqueoFinal\obj\Debug\net8.0\ProyectoParqueoFinal.genruntimeconfig.cache
 C:\Users\josep\source\repos\ProyectoParqueoFinal\obj\Debug\net8.0\ref\ProyectoParqueoFinal.dll
-C:\Users\josep\source\repos\ProyectoParqueoFinal\obj\Debug\net8.0\ProyectoParqueoFinal.sourcelink.json

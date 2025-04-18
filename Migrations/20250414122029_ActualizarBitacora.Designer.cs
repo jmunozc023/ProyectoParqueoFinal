@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProyectoParqueoFinal.Data;
 
@@ -11,9 +12,11 @@ using ProyectoParqueoFinal.Data;
 namespace ProyectoParqueoFinal.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    partial class AppDBContextModelSnapshot : ModelSnapshot
+    [Migration("20250414122029_ActualizarBitacora")]
+    partial class ActualizarBitacora
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -32,11 +35,6 @@ namespace ProyectoParqueoFinal.Migrations
 
                     b.Property<DateTime>("FechaHora")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("NumeroPlaca")
-                        .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)");
 
                     b.Property<int>("ParqueoIdParqueo")
                         .HasColumnType("int");
@@ -200,8 +198,7 @@ namespace ProyectoParqueoFinal.Migrations
 
                     b.HasOne("ProyectoParqueoFinal.Models.Vehiculo", "Vehiculo")
                         .WithMany("Bitacoras")
-                        .HasForeignKey("VehiculosIdVehiculo")
-                        .OnDelete(DeleteBehavior.NoAction);
+                        .HasForeignKey("VehiculosIdVehiculo");
 
                     b.Navigation("Parqueo");
 
