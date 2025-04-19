@@ -11,16 +11,20 @@
       "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:controllers\\seguridadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\viewmodels\\seguridadvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:viewmodels\\seguridadvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\migrations\\20250418081632_rollback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -114,19 +118,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Parqueo.cs",
-              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Models\\Parqueo.cs",
-              "RelativeDocumentMoniker": "Models\\Parqueo.cs",
-              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Models\\Parqueo.cs",
-              "RelativeToolTip": "Models\\Parqueo.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAvwAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T06:07:02.998Z"
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-19T21:56:40.585Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Bitacora.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Models\\Bitacora.cs",
               "RelativeDocumentMoniker": "Models\\Bitacora.cs",
@@ -138,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AppDBContext.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Data\\AppDBContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDBContext.cs",
@@ -150,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -168,7 +173,7 @@
               "RelativeDocumentMoniker": "Controllers\\SeguridadController.cs",
               "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\SeguridadController.cs",
               "RelativeToolTip": "Controllers\\SeguridadController.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAgwH8AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T10:12:31.486Z",
               "EditorCaption": ""
@@ -181,14 +186,14 @@
               "RelativeDocumentMoniker": "Views\\Seguridad\\GestionParqueo.cshtml",
               "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\Seguridad\\GestionParqueo.cshtml",
               "RelativeToolTip": "Views\\Seguridad\\GestionParqueo.cshtml",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwAkAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAA8AAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-31T10:58:59.91Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "SeguridadVM.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\ViewModels\\SeguridadVM.cs",
               "RelativeDocumentMoniker": "ViewModels\\SeguridadVM.cs",
@@ -196,12 +201,36 @@
               "RelativeToolTip": "ViewModels\\SeguridadVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T10:06:31.123Z",
+              "WhenOpened": "2025-03-31T10:06:31.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T08:36:06.528Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
+              "Title": "Parqueo.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Models\\Parqueo.cs",
+              "RelativeDocumentMoniker": "Models\\Parqueo.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Models\\Parqueo.cs",
+              "RelativeToolTip": "Models\\Parqueo.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAvwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T06:07:02.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "ModificarVehiculos.cshtml",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\ModificarVehiculos\\ModificarVehiculos.cshtml",
               "RelativeDocumentMoniker": "Views\\ModificarVehiculos\\ModificarVehiculos.cshtml",
@@ -213,19 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwCgAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T08:36:06.528Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "20250418081632_Rollback.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Migrations\\20250418081632_Rollback.cs",
               "RelativeDocumentMoniker": "Migrations\\20250418081632_Rollback.cs",
@@ -237,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "20250418063844_Prueba.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Migrations\\20250418063844_Prueba.cs",
               "RelativeDocumentMoniker": "Migrations\\20250418063844_Prueba.cs",
@@ -249,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -261,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "20250417235152_ActualizacionOnDeleteCascade.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Migrations\\20250417235152_ActualizacionOnDeleteCascade.cs",
               "RelativeDocumentMoniker": "Migrations\\20250417235152_ActualizacionOnDeleteCascade.cs",
@@ -273,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "20250418040346_AgregarCampoTipoVehiculoBitacora.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Migrations\\20250418040346_AgregarCampoTipoVehiculoBitacora.cs",
               "RelativeDocumentMoniker": "Migrations\\20250418040346_AgregarCampoTipoVehiculoBitacora.cs",
@@ -285,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -297,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "20250418012225_AgregandoCampoNumeroPlacaEnBitacora.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Migrations\\20250418012225_AgregandoCampoNumeroPlacaEnBitacora.cs",
               "RelativeDocumentMoniker": "Migrations\\20250418012225_AgregandoCampoNumeroPlacaEnBitacora.cs",
@@ -309,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "AppDBContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Migrations\\AppDBContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Migrations\\AppDBContextModelSnapshot.cs",
@@ -321,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "20250414122029_ActualizarBitacora.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Migrations\\20250414122029_ActualizarBitacora.cs",
               "RelativeDocumentMoniker": "Migrations\\20250414122029_ActualizarBitacora.cs",
@@ -333,7 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Vehiculo.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Models\\Vehiculo.cs",
               "RelativeDocumentMoniker": "Models\\Vehiculo.cs",
@@ -345,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "SeleccionarParqueo.cshtml",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\SeleccionParqueo\\SeleccionarParqueo.cshtml",
               "RelativeDocumentMoniker": "Views\\SeleccionParqueo\\SeleccionarParqueo.cshtml",
@@ -357,7 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "ModificarParqueos.cshtml",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\ModificarParqueos\\ModificarParqueos.cshtml",
               "RelativeDocumentMoniker": "Views\\ModificarParqueos\\ModificarParqueos.cshtml",
@@ -369,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "SeleccionParqueoController.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\SeleccionParqueoController.cs",
               "RelativeDocumentMoniker": "Controllers\\SeleccionParqueoController.cs",

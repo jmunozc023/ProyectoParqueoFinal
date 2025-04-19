@@ -1,31 +1,71 @@
-﻿@model ProyectoParqueoFinal.ViewModels.SeguridadVM;
-<div>
-    <h3>Espacios Disponibles</h3>
-    <p><strong>Automóviles:</strong> @ViewData["EspaciosDisponiblesAutos"]</p>
-    <p><strong>Motocicletas:</strong> @ViewData["EspaciosDisponiblesMotos"]</p>
-    <p><strong>Espacios Ley 7600:</strong> @ViewData["EspaciosDisponibles7600"]</p>
+﻿@using System.Security.Claims
+@model ProyectoParqueoFinal.ViewModels.SeguridadVM;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+<div class="card">
+    <div class="card-header">Ingresos/ Salidas Parqueo</div>
+    <div class="card-body">
+        <div>
+            <h3>Parqueo asignado: @User.Claims.Where(c => c.Type == ClaimTypes.StreetAddress).Select(c => c.Value).SingleOrDefault()</h3>
+            <h3>Espacios Disponibles</h3>
+            <table class="table-bordered col-7">
+                <thead class="thead-light">
+                    <tr>
+                        <th class="text-center">Automoviles</th>
+                        <th class="text-center">Motociletas</th>
+                        <th class="text-center">Espacios Ley 7600</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center">@ViewData["EspaciosDisponiblesAutos"]</td>
+                        <td class="text-center">@ViewData["EspaciosDisponiblesMotos"]</td>
+                        <td class="text-center">@ViewData["EspaciosDisponibles7600"]</td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <br/>
+            <label style="position: relative; left:45%; font-size: 20px; font-weight: bold ">Semáforo: </label>
+            <div id="semaforo" style="width:100px; height:100px; border-radius:50px; background-color:grey; position:relative; left:45%; top: 10px; bottom: 10px;"></div>
+        </div>
+        <br/>
+        <form asp-controller="Seguridad" asp-action="GestionParqueo" method="post">
+            <label>Ingrese la matricula para ingreso al parqueo</label>
+            <input class="form-control mb-3" type="text" placeholder="Número de matrícula" required asp-for="NumeroPlaca" />
+            <input type="hidden" name="accion" value="Entrada" />
+            <button style="margin-bottom:10px" class="btn btn-primary btn-block" type="submit">Ingreso</button>
+        </form>
+
+        <form asp-controller="Seguridad" asp-action="GestionParqueo" method="post">
+            <label>Ingrese la matricula para salida del parqueo</label>
+            <input class="form-control mb-3" type="text" placeholder="Número de matrícula" required asp-for="NumeroPlaca" />
+            <input type="hidden" name="accion" value="Salida" />
+            <button class="btn btn-secondary btn-block" type="submit">Salida</button>
+        </form>
+
+        @if (TempData["Mensaje"] != null)
+        {
+            <div class="alert alert-success" role="alert">
+                @TempData["Mensaje"]
+            </div>
+        }
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger" role="alert">
+                @TempData["Error"]
+            </div>
+        }
+    </div>
 </div>
-<form asp-controller="Seguridad" asp-action="GestionParqueo" method="post">
-   <input class="form-control mb-3" type="text" placeholder="Número de matrícula" required asp-for="NumeroPlaca" />
-   <input type="hidden" name="accion" value="Entrada" />
-   <button class="btn btn-primary btn-block" type="submit">Ingreso</button>
-</form>
 
-<form asp-controller="Seguridad" asp-action="GestionParqueo" method="post">
-    <input class="form-control mb-3" type="text" placeholder="Número de matrícula" required asp-for="NumeroPlaca" />
-    <input type="hidden" name="accion" value="Salida" />
-    <button class="btn btn-secondary btn-block" type="submit">Salida</button>
-</form>
 
-@if (TempData["Mensaje"] != null)
-{
-    <div class="alert alert-success" role="alert">
-        @TempData["Mensaje"]
-    </div>
-}
-@if (TempData["Error"] != null)
-{
-    <div class="alert alert-danger" role="alert">
-        @TempData["Error"]
-    </div>
-}
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var colorSemaforo = '@TempData["Semaforo"]';
+      if (colorSemaforo) {
+        document.getElementById("semaforo").style.backgroundColor = colorSemaforo;
+      }
+    });
+</script>

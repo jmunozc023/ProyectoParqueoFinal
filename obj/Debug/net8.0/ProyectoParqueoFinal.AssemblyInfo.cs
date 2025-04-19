@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoParqueoFinal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83d8633b55363ea362bdc44d2f2a2ea26e489820")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7494bc0d32f33f31caa5e1a69cede338ddfcec46")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyectoParqueoFinal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyectoParqueoFinal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
