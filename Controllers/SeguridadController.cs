@@ -74,20 +74,20 @@ namespace ProyectoParqueoFinal.Controllers
             var vehiculo = await _appDBcontext.Vehiculos.FirstOrDefaultAsync(v => v.NumeroPlaca == modelo.NumeroPlaca);
             if (vehiculo == null && accion == "Entrada")
             {
-                var intentosFallidosPrevios = await _appDBcontext.Bitacoras.CountAsync(b => b.VehiculosIdVehiculo == 0 && b.ParqueoIdParqueo == parqueo.IdParqueo && b.TipoIngreso == "Intento fallido");
+                var intentosFallidosPrevios = await _appDBcontext.Bitacoras.CountAsync(b => b.VehiculosIdVehiculo == null && b.ParqueoIdParqueo == parqueo.IdParqueo && b.NumeroPlaca == modelo.NumeroPlaca && b.TipoIngreso == "Intento fallido");
                 if (intentosFallidosPrevios > 0)
                 {
-                    await RegistrarBitacora("Intento fallido", modelo.NumeroPlaca, parqueo.IdParqueo, vehiculo?.IdVehiculo);
+                    await RegistrarBitacora("Intento fallido", modelo.NumeroPlaca, parqueo.IdParqueo, null);
                     TempData["Error"] = "El vehiculo no esta registrado y no puede ingresar nuevamente.";
                     return RedirectToAction("GestionParqueo");
                 }
                 else
                 {
-                    await RegistrarBitacora("Entrada", modelo.NumeroPlaca, parqueo.IdParqueo, vehiculo?.IdVehiculo);
-                    // Si el vehiculo no existe, se permite la entrada sin registro
-                    // pero se recomienda registrar el vehiculo para futuros ingresos
+                    await RegistrarBitacora("Intento fallido", modelo.NumeroPlaca, parqueo.IdParqueo, null);
+                    // Si el vehiculo no existe, se permite la entrada sin registro  
+                    // pero se recomienda registrar el vehiculo para futuros ingresos  
 
-                    TempData["Mensaje"] = "Ingreso permitido sin registro del vehiculo. Por favor, registre el vehiculo para proximos ingresos. ";
+                    TempData["Mensaje"] = "Ingreso permitido sin registro del vehiculo. Por favor, registre el vehiculo para proximos ingresos.";
                     return RedirectToAction("GestionParqueo");
                 }
             }
