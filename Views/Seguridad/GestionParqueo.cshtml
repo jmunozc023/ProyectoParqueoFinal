@@ -33,19 +33,6 @@
         <form asp-controller="Seguridad" asp-action="GestionParqueo" method="post">
             <label>Ingrese la matricula para ingreso al parqueo</label>
             <input class="form-control mb-3" type="text" placeholder="Número de matrícula" required asp-for="NumeroPlaca" />
-            <label>Tipo de vehículo:</label>
-            <select class="form-control mb-3" name="TipoVehiculo">
-                @if (TempData["VehiculoNoRegistrado"] != null)
-                {
-                    <div class="alert alert-warning" role="alert">
-                        @TempData["VehiculoNoRegistrado"]
-                    </div>
-                }
-                <option value="Automovil">Automóvil</option>
-                <option value="Motocicleta">Motocicleta</option>
-                <option value="Otro">Otro</option>
-            </select>
-
             <input type="hidden" name="accion" value="Entrada" />
             <button style="margin-bottom:10px" class="btn btn-primary btn-block" type="submit">Ingreso</button>
         </form>
