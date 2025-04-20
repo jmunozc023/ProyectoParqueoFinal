@@ -33,6 +33,11 @@ namespace ProyectoParqueoFinal.Migrations
                     b.Property<DateTime>("FechaHora")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("NumeroPlaca")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
+
                     b.Property<int>("ParqueoIdParqueo")
                         .HasColumnType("int");
 
@@ -41,7 +46,7 @@ namespace ProyectoParqueoFinal.Migrations
                         .HasMaxLength(25)
                         .HasColumnType("nvarchar(25)");
 
-                    b.Property<int>("VehiculosIdVehiculo")
+                    b.Property<int?>("VehiculosIdVehiculo")
                         .HasColumnType("int");
 
                     b.HasKey("IdBitacora");
@@ -196,8 +201,7 @@ namespace ProyectoParqueoFinal.Migrations
                     b.HasOne("ProyectoParqueoFinal.Models.Vehiculo", "Vehiculo")
                         .WithMany("Bitacoras")
                         .HasForeignKey("VehiculosIdVehiculo")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.NoAction);
 
                     b.Navigation("Parqueo");
 

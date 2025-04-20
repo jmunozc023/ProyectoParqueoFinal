@@ -1,0 +1,55 @@
+﻿@model ProyectoParqueoFinal.ViewModels.PerfilUsuarioVM;
+
+<div class="card col-md-7 justify-content-center" style="color: black">
+    <div class="card-header bg-primary text-white"><h2>Perfil del usuario</h2></div>
+    <div class="card-body">
+        <div>
+            <h3>Datos personales: </h3>
+            <p>Nombre: @Model.Nombre</p>
+            <p>Apellido: @Model.Apellido</p>
+            <p>Correo electronico: @Model.CorreoElectronico</p>
+            <p>Fecha de nacimiento: @Model.FechaNacimiento</p>
+            <p>Cédula: @Model.Cedula</p>
+            <p>Número de Carnet: @Model.NumeroCarne</p>
+            <br />
+            <h3>Vehiculos registrados: </h3>
+            <table class="table table-bordered align-content-lg-center col-md-10 text-center">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Color</th>
+                        <th>Número de Placa</th>
+                        <th>Tipo de Vehiculo</th>
+                        <th>Espacio Ley 7600</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.Vehiculos != null && Model.Vehiculos.Any())
+                    {
+                        foreach (var vehiculo in Model.Vehiculos )
+                        {
+                            <tr>
+                                <td>@vehiculo.Marca</td>
+                                <td>@vehiculo.Modelo</td>
+                                <td>@vehiculo.Color</td>
+                                <td>@vehiculo.NumeroPlaca</td>
+                                <td>@vehiculo.TipoVehiculo</td>
+                                <td>@vehiculo.UsaEspacio7600</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+							<td colspan="6" class="text-center">No hay vehiculos registrados</td>
+                        </tr>
+                    }
+
+				</tbody>
+            </table>
+            <br/>
+            <h4 class="fw-bold">Cualquier inconsistencia con los datos mostrados contacte al administrador</h4>
+        </div>
+    </div>
+</div>

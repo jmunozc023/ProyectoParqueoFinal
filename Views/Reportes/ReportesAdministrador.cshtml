@@ -1,0 +1,97 @@
+﻿@using System.Security.Claims
+@model ProyectoParqueoFinal.ViewModels.SeguridadVM;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+<h2>Reportes de Ocupación y Intentos Fallidos</h2>
+
+<form method="get" action="@Url.Action("ReportesAdministrador")" class="mb-3">
+    <div class="row">
+        <div class="col-md-4">
+            <label for="fechaInicio">Fecha de inicio:</label>
+            <input type="date" id="fechaInicio" name="fechaInicio" class="form-control" value="@ViewData["FechaInicio"]" required>
+        </div>
+        <div class="col-md-4">
+            <label for="fechaFin">Fecha de fin:</label>
+            <input type="date" id="fechaFin" name="fechaFin" class="form-control" value="@ViewData["FechaFin"]" required>
+        </div>
+        <div class="col-md-4 d-flex align-items-end">
+            <button type="submit" class="btn btn-primary">Filtrar</button>
+        </div>
+    </div>
+</form>
+
+<div class="card mb-4">
+    <div class="card-header bg-primary text-white">
+        <h3>Ocupación de Parqueos</h3>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>Nombre del Parqueo</th>
+                    <th>Espacios Disponibles (Automóviles)</th>
+                    <th>Espacios Disponibles (Motocicletas)</th>
+                    <th>Espacios Disponibles (Ley 7600)</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (ViewData["OcupacionParqueos"] != null)
+                {
+                    var ocupacionParqueos = (Dictionary<int, dynamic>)ViewData["OcupacionParqueos"];
+                    foreach (var parqueo in ocupacionParqueos.Values)
+                    {
+                        <tr>
+                            <td>@parqueo.NombreParqueo</td>
+                            <td>@parqueo.EspaciosDisponiblesAutos</td>
+                            <td>@parqueo.EspaciosDisponiblesMotos</td>
+                            <td>@parqueo.EspaciosDisponibles7600</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4" class="text-center">No hay datos de ocupación disponibles.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header bg-danger text-white">
+        <h3>Intentos Fallidos de Ingreso</h3>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>Fecha y Hora</th>
+                    <th>Número de Placa</th>
+                    <th>Parqueo</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (ViewData["IntentosFallidos"] != null)
+                {
+                    var intentosFallidos = (List<ProyectoParqueoFinal.Models.Bitacora>)ViewData["IntentosFallidos"];
+                    foreach (var intento in intentosFallidos)
+                    {
+                        <tr>
+                            <td>@intento.FechaHora.ToString("dd/MM/yyyy HH:mm")</td>
+                            <td>@intento.NumeroPlaca</td>
+                            <td>@intento.Parqueo.NombreParqueo</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="3" class="text-center">No hay registros de intentos fallidos.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
