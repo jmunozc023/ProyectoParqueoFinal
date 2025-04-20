@@ -2,8 +2,8 @@
 @model ProyectoParqueoFinal.ViewModels.SeguridadVM;
 @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
 
-<div class="card">
-    <div class="card-header">Ingresos/ Salidas Parqueo</div>
+<div class="card col-md-7 justify-content-center" style="color: black">
+    <div class="card-header bg-primary text-white">Ingresos/ Salidas Parqueo</div>
     <div class="card-body">
         <div>
             <h3>Parqueo asignado: @User.Claims.Where(c => c.Type == ClaimTypes.StreetAddress).Select(c => c.Value).SingleOrDefault()</h3>
@@ -33,6 +33,19 @@
         <form asp-controller="Seguridad" asp-action="GestionParqueo" method="post">
             <label>Ingrese la matricula para ingreso al parqueo</label>
             <input class="form-control mb-3" type="text" placeholder="Número de matrícula" required asp-for="NumeroPlaca" />
+            <label>Tipo de vehículo:</label>
+            <select class="form-control mb-3" name="TipoVehiculo">
+                @if (TempData["VehiculoNoRegistrado"] != null)
+                {
+                    <div class="alert alert-warning" role="alert">
+                        @TempData["VehiculoNoRegistrado"]
+                    </div>
+                }
+                <option value="Automovil">Automóvil</option>
+                <option value="Motocicleta">Motocicleta</option>
+                <option value="Otro">Otro</option>
+            </select>
+
             <input type="hidden" name="accion" value="Entrada" />
             <button style="margin-bottom:10px" class="btn btn-primary btn-block" type="submit">Ingreso</button>
         </form>

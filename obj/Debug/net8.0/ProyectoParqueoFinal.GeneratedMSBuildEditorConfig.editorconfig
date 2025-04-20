@@ -68,6 +68,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kaWZpY2FyVmVoaWN1bG9zXE1vZGlmaWNhclZlaGljdWxvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/PerfilUsuario/PerfilUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsVXN1YXJpb1xQZXJmaWxVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/Reportes/ReportesAdministrador.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXNcUmVwb3J0ZXNBZG1pbmlzdHJhZG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/Reportes/ReportesSeguridad.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXNcUmVwb3J0ZXNTZWd1cmlkYWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/Reportes/ReportesUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXNcUmVwb3J0ZXNVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/josep/source/repos/ProyectoParqueoFinal/Views/Seguridad/GestionParqueo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VndXJpZGFkXEdlc3Rpb25QYXJxdWVvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

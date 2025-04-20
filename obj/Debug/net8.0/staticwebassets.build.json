@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XdLsYkA0cBx2hKsTGvmr8Ktwq5tDUJ89/GwMM6Eh8QU=",
+  "Hash": "rD0AoqAXhG3692p66VTaIhdJSRAtAeA6ZtbB+cXj5U4=",
   "Source": "ProyectoParqueoFinal",
   "BasePath": "_content/ProyectoParqueoFinal",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "etmwpwjz8d",
-      "Integrity": "gmSJHQ2gnrEZtQ6QB9Pm+7y1KcFzhQ6W1/UUfSeh5zA=",
+      "Fingerprint": "uxdi5ug9s6",
+      "Integrity": "ErQRMFpwzeQ4hWvP5F08EJcEriwsMntq8fEDAGUYCYc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -99,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\wwwroot\\Images\\UlacitImage.jpg",
+      "SourceId": "ProyectoParqueoFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\wwwroot\\",
+      "BasePath": "_content/ProyectoParqueoFinal",
+      "RelativePath": "Images/UlacitImage#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0agwkkg6vo",
+      "Integrity": "aP6BTc4g9oJeVMnSwTfQHm98uEwnroVPcO3aX0aH7vE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\UlacitImage.jpg"
     },
     {
       "Identity": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\wwwroot\\js\\site.js",
@@ -1331,7 +1352,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "574"
+          "Value": "1140"
         },
         {
           "Name": "Content-Type",
@@ -1339,11 +1360,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"gmSJHQ2gnrEZtQ6QB9Pm+7y1KcFzhQ6W1/UUfSeh5zA=\""
+          "Value": "\"ErQRMFpwzeQ4hWvP5F08EJcEriwsMntq8fEDAGUYCYc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 30 Mar 2025 07:39:20 GMT"
+          "Value": "Sun, 20 Apr 2025 01:06:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1353,12 +1374,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-gmSJHQ2gnrEZtQ6QB9Pm+7y1KcFzhQ6W1/UUfSeh5zA="
+          "Value": "sha256-ErQRMFpwzeQ4hWvP5F08EJcEriwsMntq8fEDAGUYCYc="
         }
       ]
     },
     {
-      "Route": "css/site.etmwpwjz8d.css",
+      "Route": "css/site.uxdi5ug9s6.css",
       "AssetFile": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1368,7 +1389,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "574"
+          "Value": "1140"
         },
         {
           "Name": "Content-Type",
@@ -1376,11 +1397,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"gmSJHQ2gnrEZtQ6QB9Pm+7y1KcFzhQ6W1/UUfSeh5zA=\""
+          "Value": "\"ErQRMFpwzeQ4hWvP5F08EJcEriwsMntq8fEDAGUYCYc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 30 Mar 2025 07:39:20 GMT"
+          "Value": "Sun, 20 Apr 2025 01:06:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1390,7 +1411,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "etmwpwjz8d"
+          "Value": "uxdi5ug9s6"
         },
         {
           "Name": "label",
@@ -1398,7 +1419,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-gmSJHQ2gnrEZtQ6QB9Pm+7y1KcFzhQ6W1/UUfSeh5zA="
+          "Value": "sha256-ErQRMFpwzeQ4hWvP5F08EJcEriwsMntq8fEDAGUYCYc="
         }
       ]
     },
@@ -1481,6 +1502,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "Images/UlacitImage.0agwkkg6vo.jpg",
+      "AssetFile": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\wwwroot\\Images\\UlacitImage.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "293600"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aP6BTc4g9oJeVMnSwTfQHm98uEwnroVPcO3aX0aH7vE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 00:33:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0agwkkg6vo"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/UlacitImage.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aP6BTc4g9oJeVMnSwTfQHm98uEwnroVPcO3aX0aH7vE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/UlacitImage.jpg",
+      "AssetFile": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\wwwroot\\Images\\UlacitImage.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "293600"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aP6BTc4g9oJeVMnSwTfQHm98uEwnroVPcO3aX0aH7vE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 00:33:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aP6BTc4g9oJeVMnSwTfQHm98uEwnroVPcO3aX0aH7vE="
         }
       ]
     },

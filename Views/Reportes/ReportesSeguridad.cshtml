@@ -1,0 +1,91 @@
+﻿@using System.Security.Claims
+@model ProyectoParqueoFinal.ViewModels.SeguridadVM;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "Reporte de Seguridad";
+}
+
+<h2>Reporte de Ocupación de Parqueos</h2>
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger" role="alert">@TempData["Error"]</div>
+}
+
+<div class="card mb-4">
+    <div class="card-header bg-primary text-white">
+        <h3>Ocupación del Parqueo Asignado</h3>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>Nombre del Parqueo</th>
+                    <th>Espacios Disponibles (Automóviles)</th>
+                    <th>Espacios Disponibles (Motocicletas)</th>
+                    <th>Espacios Disponibles (Ley 7600)</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (ViewData["OcupacionActual"] != null)
+                {
+                    var parqueoAsignado = (Dictionary<string, object>)ViewData["OcupacionActual"];
+                    <tr>
+                        <td>@parqueoAsignado["NombreParqueo"]</td>
+                        <td>@parqueoAsignado["EspaciosDisponiblesAutos"]</td>
+                        <td>@parqueoAsignado["EspaciosDisponiblesMotos"]</td>
+                        <td>@parqueoAsignado["EspaciosDisponibles7600"]</td>
+                    </tr>
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4" class="text-center">No hay información del parqueo asignado.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header bg-secondary text-white">
+        <h3>Ocupación de Otros Parqueos</h3>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>Nombre del Parqueo</th>
+                    <th>Espacios Disponibles (Automóviles)</th>
+                    <th>Espacios Disponibles (Motocicletas)</th>
+                    <th>Espacios Disponibles (Ley 7600)</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (ViewData["OcupacionOtrosParqueos"] != null)
+                {
+                    var otrosParqueos = (List<Dictionary<string, object>>)ViewData["OcupacionOtrosParqueos"];
+                    foreach (var parqueo in otrosParqueos)
+                    {
+                        <tr>
+                            <td>@parqueo["NombreParqueo"]</td>
+                            <td>@parqueo["EspaciosDisponiblesAutos"]</td>
+                            <td>@parqueo["EspaciosDisponiblesMotos"]</td>
+                            <td>@parqueo["EspaciosDisponibles7600"]</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4" class="text-center">No hay información de otros parqueos.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+

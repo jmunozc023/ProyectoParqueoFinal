@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "Historial de Uso de Parqueos";
+}
+
+<h2>Historial de Uso de Parqueos</h2>
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["Error"]
+    </div>
+}
+
+<!-- Filtro por mes -->
+<form method="get" action="@Url.Action("ReportesUsuario")" class="mb-3">
+    <label for="mes">Filtrar por mes:</label>
+
+    @{
+        int mesSeleccionado = ViewData["MesSeleccionado"] != null ? (int)ViewData["MesSeleccionado"] : 0;
+    }
+
+    <select id="mes" name="mes" class="form-control">
+        <option value="">Todos</option>
+        @for (int i = 1; i <= 12; i++)
+        {
+            <option value="@i" selected="@(i == mesSeleccionado ? "selected" : null)">
+                @System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i)
+            </option>
+        }
+    </select>
+
+    <button type="submit" class="btn btn-primary mt-2">Filtrar</button>
+</form>
+
+<div class="card">
+    <div class="card-header bg-info text-white">
+        <h3>Historial de Uso</h3>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>Fecha y Hora</th>
+                    <th>Número de Placa</th>
+                    <th>Tipo de Vehículo</th>
+                    <th>Tipo de Ingreso</th>
+                    <th>Parqueo</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (ViewData["Historial"] != null && ((List<ProyectoParqueoFinal.Models.Bitacora>)ViewData["Historial"]).Any())
+                {
+                    var historial = (List<ProyectoParqueoFinal.Models.Bitacora>)ViewData["Historial"];
+                    foreach (var registro in historial)
+                    {
+                        <tr>
+                            <td>@registro.FechaHora.ToString("dd/MM/yyyy HH:mm")</td>
+                            <td>@registro.NumeroPlaca</td>
+                            <td>@registro.Vehiculo?.TipoVehiculo</td>
+                            <td>@registro.TipoIngreso</td>
+                            <td>@registro.ParqueoIdParqueo</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="5" class="text-center">No hay registros disponibles para el mes seleccionado.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

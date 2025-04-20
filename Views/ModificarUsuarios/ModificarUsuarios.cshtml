@@ -1,20 +1,19 @@
 ﻿@model ProyectoParqueoFinal.ViewModels.ModificarUsuariosVM;
 
-<html style="background-color: blueviolet;">
+<html>
 <head>
     <title>Modificar Usuarios</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 </head>
-<body style="background-color: blueviolet;">
-    <div class="row mt-5 justify-content-center" style="background-color: blueviolet;">
+<body style="background-color: transparent;">
+    <div class="row mt-5 justify-content-center" style="background-color: transparent">
         <div class="col-sm-4">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header bg-primary text-white">
                     <h3>Modificar Usuario</h3>
                 </div>
                 <div class="card-body">
                     <form asp-controller="ModificarUsuarios" asp-action="ModificarUsuarios" method="post">
-                        @* <input type="hidden" name="_method" value="PUT" /> *@
                         <input class="form-control mb-3" type="text" placeholder="Nombre" required asp-for="Nombre" value="@Model.Nombre" />
                         <input class="form-control mb-3" type="text" placeholder="Apellido" required asp-for="Apellido" value="@Model.Apellido" />
                         <input class="form-control mb-3" type="email" placeholder="Correo electronico" required asp-for="CorreoElectronico" value="@Model.CorreoElectronico" />

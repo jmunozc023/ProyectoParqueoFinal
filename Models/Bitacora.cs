@@ -11,6 +11,7 @@
         public Vehiculo Vehiculo { get; set; }
 
         public int ParqueoIdParqueo { get; set; }
+        public string TipoVehiculo { get; set; }
         public Parqueo Parqueo { get; set; }
     }
 }
