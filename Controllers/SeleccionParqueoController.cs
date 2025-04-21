@@ -6,7 +6,7 @@ using System.Security.Claims;
 
 namespace ProyectoParqueoFinal.Controllers
 {
-    public class SeleccionParqueoController : Controller // Inherit from Controller to access User and RedirectToAction
+    public class SeleccionParqueoController : Controller 
     {
         private readonly AppDBContext _appDBcontext;
 

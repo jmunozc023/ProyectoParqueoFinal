@@ -91,8 +91,6 @@ namespace ProyectoParqueoFinal.Controllers
                         return RedirectToAction("GestionParqueo");
                     }
                     await RegistrarBitacora("Intento fallido", modelo.NumeroPlaca, parqueo.IdParqueo, null);
-                    // Si el vehiculo no existe, se permite la entrada sin registro  
-                    // pero se recomienda registrar el vehiculo para futuros ingresos  
                     TempData["Semaforo"] = "red";
                     TempData["Mensaje"] = "Ingreso permitido sin registro del vehiculo. Por favor, registre el vehiculo para proximos ingresos.";
                     return RedirectToAction("GestionParqueo");
@@ -101,7 +99,7 @@ namespace ProyectoParqueoFinal.Controllers
             if (accion == "Entrada")
             {
                 var espaciosDisponibles = CalcularEspaciosDisponibles(vehiculo.TipoVehiculo, parqueo, vehiculo.UsaEspacio7600);
-                if (espaciosDisponibles <= 0)
+                if (espaciosDisponibles == 0)
                 {
                     await RegistrarBitacora("Intento fallido", modelo.NumeroPlaca, parqueo.IdParqueo, vehiculo?.IdVehiculo);
                     TempData["Semaforo"] = "red";
@@ -147,23 +145,38 @@ namespace ProyectoParqueoFinal.Controllers
             return RedirectToAction("GestionParqueo");
         }
         private int CalcularEspaciosDisponibles(string tipoVehiculo, Parqueo parqueo, bool usaEspacio7600)
-        { 
-            var bitacoras = _appDBcontext.Bitacoras.Include(b =>b.Vehiculo).Where(b => b.ParqueoIdParqueo == parqueo.IdParqueo).ToList();
-            int ingresos = bitacoras.Count(b => b.TipoIngreso == "Entrada" && b.Vehiculo != null && b.Vehiculo.TipoVehiculo == tipoVehiculo && b.Vehiculo.UsaEspacio7600 == usaEspacio7600);
-            int salidas = bitacoras.Count(b => b.TipoIngreso == "Salida" && b.Vehiculo != null && b.Vehiculo.TipoVehiculo == tipoVehiculo && b.Vehiculo.UsaEspacio7600 == usaEspacio7600);
-            if (tipoVehiculo == "Automovil")
+        {
+            var bitacoras = _appDBcontext.Bitacoras.Include(b => b.Vehiculo).Where(b => b.ParqueoIdParqueo == parqueo.IdParqueo).ToList();
+
+            int ingresos = bitacoras.Count(b => b.TipoIngreso == "Entrada" && b.Vehiculo != null &&
+                                                b.Vehiculo.TipoVehiculo == tipoVehiculo &&
+                                                b.Vehiculo.UsaEspacio7600 == usaEspacio7600);
+
+            int salidas = bitacoras.Count(b => b.TipoIngreso == "Salida" && b.Vehiculo != null &&
+                                               b.Vehiculo.TipoVehiculo == tipoVehiculo &&
+                                               b.Vehiculo.UsaEspacio7600 == usaEspacio7600);
+
+            if (tipoVehiculo == "Automovil" && !usaEspacio7600)
                 return parqueo.CapacidadAutomoviles - ingresos + salidas;
-            else if (tipoVehiculo == "Motocicleta")
+            else if (tipoVehiculo == "Motocicleta" && !usaEspacio7600)
                 return parqueo.CapacidadMotocicletas - ingresos + salidas;
-            else if (usaEspacio7600)
-                return parqueo.CapacidadLey7600 - ingresos + salidas;
+            else if (usaEspacio7600)  // Filtrar SOLO los vehículos que usan espacio 7600
+                return parqueo.CapacidadLey7600 - bitacoras.Count(b => b.TipoIngreso == "Entrada" &&
+                                                                       b.Vehiculo != null &&
+                                                                       b.Vehiculo.UsaEspacio7600) +
+                                                 bitacoras.Count(b => b.TipoIngreso == "Salida" &&
+                                                                      b.Vehiculo != null &&
+                                                                      b.Vehiculo.UsaEspacio7600);
+
             return 0;
         }
+
         private async Task RegistrarBitacora(string tipoIngreso, string numeroPlaca, int idParqueo, int? idVehiculo)
         {
             try
             {
                 var vehiculo = idVehiculo.HasValue ? await _appDBcontext.Vehiculos.FindAsync(idVehiculo) : null;
+                var usaEspacio7600 = vehiculo?.UsaEspacio7600 ?? false; 
                 var bitacora = new Bitacora
                 {
                     TipoIngreso = tipoIngreso,
@@ -171,7 +184,8 @@ namespace ProyectoParqueoFinal.Controllers
                     VehiculosIdVehiculo = idVehiculo,
                     NumeroPlaca = numeroPlaca,
                     ParqueoIdParqueo = idParqueo,
-                    TipoVehiculo = vehiculo?.TipoVehiculo // Ensure TipoVehiculo is set  
+                    TipoVehiculo = vehiculo?.TipoVehiculo,
+                    UsaEspacio7600 = usaEspacio7600 
                 };
 
                 _appDBcontext.Bitacoras.Add(bitacora);
@@ -183,24 +197,6 @@ namespace ProyectoParqueoFinal.Controllers
                 throw;
             }
         }
-        //    if (vehiculo == null)
-        //    {
-        //        TempData["Error"] = "No se encontró el vehículo.";
-        //        return View();
-        //    }
-        //    var idVehiculo = vehiculo.IdVehiculo;
-        //    idVehiculo = modelo.VehiculosIdVehiculo;
-        //    var bitacora = new Bitacora
-        //    {
-        //        TipoIngreso = modelo.TipoIngreso,
-        //        FechaHora = DateTime.Now,
-        //        VehiculosIdVehiculo = modelo.VehiculosIdVehiculo,
-        //        ParqueoIdParqueo = parqueo.IdParqueo
-        //    };
-        //    _appDBcontext.Bitacoras.Add(bitacora);
-        //    await _appDBcontext.SaveChangesAsync();
-        //    return RedirectToAction("GestionParqueo");
-        //}
 
     }
 }
