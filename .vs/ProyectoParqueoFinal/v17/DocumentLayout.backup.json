@@ -3,28 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Migrations\\20250421070253_TipoVehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250421070253_TipoVehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\models\\bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:models\\bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\controllers\\seguridadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:controllers\\seguridadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\views\\seguridad\\gestionparqueo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:views\\seguridad\\gestionparqueo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Migrations\\20250421063943_Ley76002.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250421063943_Ley76002.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Migrations\\20250421062709_Ley7600.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250421062709_Ley7600.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\viewmodels\\seguridadvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:viewmodels\\seguridadvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\models\\parqueo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:models\\parqueo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\models\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:models\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\models\\bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:models\\bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\views\\seguridad\\gestionparqueo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:views\\seguridad\\gestionparqueo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\views\\reportes\\reportesadministrador.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:views\\reportes\\reportesadministrador.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\controllers\\modificarusuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:controllers\\modificarusuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,79 +75,157 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-20T10:01:58.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SeguridadController.cs",
-              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\SeguridadController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SeguridadController.cs",
-              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\SeguridadController.cs",
-              "RelativeToolTip": "Controllers\\SeguridadController.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAAAK0AAABZAAAAAAAAAA==",
+              "Title": "20250421070253_TipoVehiculo.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Migrations\\20250421070253_TipoVehiculo.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250421070253_TipoVehiculo.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Migrations\\20250421070253_TipoVehiculo.cs",
+              "RelativeToolTip": "Migrations\\20250421070253_TipoVehiculo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T08:57:36.97Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GestionParqueo.cshtml",
-              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\Seguridad\\GestionParqueo.cshtml",
-              "RelativeDocumentMoniker": "Views\\Seguridad\\GestionParqueo.cshtml",
-              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\Seguridad\\GestionParqueo.cshtml",
-              "RelativeToolTip": "Views\\Seguridad\\GestionParqueo.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACsAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-20T08:56:06.712Z",
+              "WhenOpened": "2025-04-21T07:02:53.528Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "SeguridadVM.cs",
-              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\ViewModels\\SeguridadVM.cs",
-              "RelativeDocumentMoniker": "ViewModels\\SeguridadVM.cs",
-              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\ViewModels\\SeguridadVM.cs",
-              "RelativeToolTip": "ViewModels\\SeguridadVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
+              "Title": "20250421063943_Ley76002.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Migrations\\20250421063943_Ley76002.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250421063943_Ley76002.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Migrations\\20250421063943_Ley76002.cs",
+              "RelativeToolTip": "Migrations\\20250421063943_Ley76002.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T08:54:07.184Z",
+              "WhenOpened": "2025-04-21T06:39:43.464Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Parqueo.cs",
-              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Models\\Parqueo.cs",
-              "RelativeDocumentMoniker": "Models\\Parqueo.cs",
-              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Models\\Parqueo.cs",
-              "RelativeToolTip": "Models\\Parqueo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "AppDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Data\\AppDBContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDBContext.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Data\\AppDBContext.cs",
+              "RelativeToolTip": "Data\\AppDBContext.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAswCgAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T08:53:38.094Z",
+              "WhenOpened": "2025-04-21T06:29:34.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "20250421062709_Ley7600.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Migrations\\20250421062709_Ley7600.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250421062709_Ley7600.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Migrations\\20250421062709_Ley7600.cs",
+              "RelativeToolTip": "Migrations\\20250421062709_Ley7600.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T06:27:09.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SeguridadVM.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\ViewModels\\SeguridadVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\SeguridadVM.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\ViewModels\\SeguridadVM.cs",
+              "RelativeToolTip": "ViewModels\\SeguridadVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T06:20:51.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Vehiculo.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Models\\Vehiculo.cs",
+              "RelativeDocumentMoniker": "Models\\Vehiculo.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Models\\Vehiculo.cs",
+              "RelativeToolTip": "Models\\Vehiculo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T06:20:12.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Bitacora.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Models\\Bitacora.cs",
               "RelativeDocumentMoniker": "Models\\Bitacora.cs",
               "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Models\\Bitacora.cs",
               "RelativeToolTip": "Models\\Bitacora.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T08:53:32.636Z",
+              "WhenOpened": "2025-04-21T06:19:13.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SeguridadController.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\SeguridadController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SeguridadController.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\SeguridadController.cs",
+              "RelativeToolTip": "Controllers\\SeguridadController.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAAAAAMgAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T06:02:57.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GestionParqueo.cshtml",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\Seguridad\\GestionParqueo.cshtml",
+              "RelativeDocumentMoniker": "Views\\Seguridad\\GestionParqueo.cshtml",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\Seguridad\\GestionParqueo.cshtml",
+              "RelativeToolTip": "Views\\Seguridad\\GestionParqueo.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-21T06:02:45.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ReportesAdministrador.cshtml",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\Reportes\\ReportesAdministrador.cshtml",
+              "RelativeDocumentMoniker": "Views\\Reportes\\ReportesAdministrador.cshtml",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\Reportes\\ReportesAdministrador.cshtml",
+              "RelativeToolTip": "Views\\Reportes\\ReportesAdministrador.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-21T05:55:11.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-21T05:50:03.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ModificarUsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\ModificarUsuariosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ModificarUsuariosController.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\ModificarUsuariosController.cs",
+              "RelativeToolTip": "Controllers\\ModificarUsuariosController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwD0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T05:22:42.036Z",
               "EditorCaption": ""
             }
           ]

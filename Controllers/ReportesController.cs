@@ -1,9 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProyectoParqueoFinal.Data;
-using ProyectoParqueoFinal.Models;
-using ProyectoParqueoFinal.ViewModels;
 using System.Security.Claims;
 
 namespace ProyectoParqueoFinal.Controllers
@@ -116,26 +114,6 @@ namespace ProyectoParqueoFinal.Controllers
             ViewData["OcupacionActual"] = ocupacionActual;
             ViewData["OcupacionOtrosParqueos"] = ocupacionOtrosParqueos;
 
-            return View();
-        }
-
-        // GET: Ahora se quiere crear un reporte para los usuarios y los administrativos en el cual se muestre el historial de uso de los parqueos filtrados por mes
-        [Authorize(Roles = "Usuario, Administrador")]
-        [HttpGet]
-        public async Task<IActionResult> ReporteHistorialUso(DateTime? fechaInicio, DateTime? fechaFin)
-        {
-            var vehiculos = await _appDBcontext.Vehiculos.ToListAsync();
-            var bitacoras = await _appDBcontext.Bitacoras.Include(b => b.Vehiculo).ToListAsync();
-            // Si no hay fechas seleccionadas, usar un rango predeterminado
-            if (!fechaInicio.HasValue) fechaInicio = DateTime.Now.AddDays(-30);
-            if (!fechaFin.HasValue) fechaFin = DateTime.Now;
-            var historialUso = bitacoras
-                .Where(b => b.FechaHora >= fechaInicio && b.FechaHora <= fechaFin)
-                .ToList();
-            ViewData["HistorialUso"] = historialUso;
-            ViewData["Vehiculos"] = vehiculos;
-            ViewData["FechaInicio"] = fechaInicio.Value.ToString("yyyy-MM-dd");
-            ViewData["FechaFin"] = fechaFin.Value.ToString("yyyy-MM-dd");
             return View();
         }
 

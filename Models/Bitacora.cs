@@ -11,7 +11,8 @@
         public Vehiculo Vehiculo { get; set; }
 
         public int ParqueoIdParqueo { get; set; }
-        public string TipoVehiculo { get; set; }
+        public string? TipoVehiculo { get; set; }
+        public bool UsaEspacio7600 { get; set; }
         public Parqueo Parqueo { get; set; }
     }
 }
