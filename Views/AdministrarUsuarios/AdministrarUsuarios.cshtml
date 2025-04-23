@@ -76,6 +76,8 @@
                                         <td>
                                             <form asp-controller="ModificarUsuarios" asp-action="ModificarUsuarios" method="get">
                                                 <input type="hidden" name="correo" value="@usuario.CorreoElectronico" />
+                                                <input type="hidden" name="fechaNacimiento" value="@usuario.FechaNacimiento"/>
+                                                <input type="hidden" name="password" value="@usuario.Password"/>
                                                 <button class="btn btn-info btn-sm" type="submit">Modificar</button>
                                             </form>
                                             <form asp-controller="AdministrarUsuarios" asp-action="EliminarUsuario" method="post" onsubmit="return confirm('¿Está seguro que desea eliminar este usuario?');">
