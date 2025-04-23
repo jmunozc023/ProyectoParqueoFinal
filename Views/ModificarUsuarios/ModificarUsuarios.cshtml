@@ -17,7 +17,7 @@
                         <input class="form-control mb-3" type="text" placeholder="Nombre" required asp-for="Nombre" value="@Model.Nombre" />
                         <input class="form-control mb-3" type="text" placeholder="Apellido" required asp-for="Apellido" value="@Model.Apellido" />
                         <input class="form-control mb-3" type="email" placeholder="Correo electronico" required asp-for="CorreoElectronico" value="@Model.CorreoElectronico" />
-						<input class="form-control mb-3" type="date" placeholder="Fecha de Nacimiento" required asp-for="FechaNacimiento" value="@Model.FechaNacimiento" />
+                        <input class="form-control mb-3" type="date" placeholder="Fecha de Nacimiento" required asp-for="FechaNacimiento" value="@Model.FechaNacimiento.ToString("yyyy-MM-dd")"/>
 						<input class="form-control mb-3" type="text" placeholder="Cédula" required asp-for="Cedula" value="@Model.Cedula" />
 						<input class="form-control mb-3" type="text" placeholder="Número de Carnet" required asp-for="NumeroCarne" value="@Model.NumeroCarne" />
                         <input class="form-control mb-3" type="password" placeholder="Password" required asp-for="Password" value="@Model.Password" />
@@ -25,8 +25,8 @@
                             <option disabled selected value="Rol">Rol</option>
                             <option value="Administrador" selected="@(Model.Rol == "Administrador")">Administrador</option>
                             <option value="Seguridad" selected="@(Model.Rol == "Seguridad")">Seguridad</option>
-                            <option value="Usuario" selected="@(Model.Rol == "Estudiante")">Estudiante</option>
-                            <option value="Usuario" selected="@(Model.Rol == "Administrativo")">Administrativo</option>
+                            <option value="Estudiante" selected="@(Model.Rol == "Estudiante")">Estudiante</option>
+                            <option value="Administrativo" selected="@(Model.Rol == "Administrativo")">Administrativo</option>
                         </select>
                         <div class="form-check mb-3">
                             <input class="form-check-input" type="checkbox" asp-for="@Model.RequiereCambioPassword" value="true" id="Checkbox1" />
