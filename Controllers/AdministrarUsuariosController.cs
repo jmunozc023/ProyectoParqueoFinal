@@ -17,36 +17,40 @@ namespace ProyectoParqueoFinal.Controllers
         {
             _appDBcontext = appDBcontext;
         }
+
+        //Controlador Get para la vista de administración de usuarios
         [Authorize(Roles = "Administrador")]
         [HttpGet]
         public IActionResult AdministrarUsuarios()
         {
-            var usuarios = _appDBcontext.Usuarios.ToList();
+            var usuarios = _appDBcontext.Usuarios.ToList(); //Obtiene los datos de los usuarios
             ViewData["Usuarios"] = usuarios;
             return View();
         }
+
+        //Controlador Post para la vista de administración de usuarios
         [Authorize(Roles = "Administrador")]
         [HttpPost]
-        public async Task<IActionResult> AdministrarUsuarios(AdministrarUsuariosVM modelo)
+        public async Task<IActionResult> AdministrarUsuarios(AdministrarUsuariosVM modelo) //Crea un nuevo usuario
         {
-            bool emailExists = await _appDBcontext.Usuarios.AnyAsync(u => u.CorreoElectronico == modelo.CorreoElectronico);
-            if (emailExists)
+            bool emailExists = await _appDBcontext.Usuarios.AnyAsync(u => u.CorreoElectronico == modelo.CorreoElectronico); // Verifica si el correo ya existe
+            if (emailExists) //Validacion del correo si ya existe
             {
                 ViewData["Mensaje"] = "El correo ingresado ya está registrado en el sistema.";
                 return View();
             }
-            bool cedulaExists = await _appDBcontext.Usuarios.AnyAsync(u => u.Cedula == modelo.Cedula);
-            if (cedulaExists)
+            bool cedulaExists = await _appDBcontext.Usuarios.AnyAsync(u => u.Cedula == modelo.Cedula); // Verifica si la cedula ya existe
+            if (cedulaExists) //Validacion de la cedula si ya existe
             {
                 ViewData["Mensaje"] = "La cedula ingresada ya está registrada en el sistema. ";
                 return View();
             }
-            bool carneExists = await _appDBcontext.Usuarios.AnyAsync(u => u.NumeroCarne == modelo.NumeroCarne);
-            if (carneExists)
+            bool carneExists = await _appDBcontext.Usuarios.AnyAsync(u => u.NumeroCarne == modelo.NumeroCarne); // Verifica si el carnet ya existe
+            if (carneExists) //Validacion del carnet si ya existe
             {
                 ViewData["Mensaje"] = "El número de Carnet ingresado ya esta registrado en el sistema. ";
             }
-            Usuario usuario = new Usuario
+            Usuario usuario = new Usuario //Crea un nuevo usuario
             {
                 Nombre = modelo.Nombre,
                 Apellido = modelo.Apellido,
@@ -59,20 +63,20 @@ namespace ProyectoParqueoFinal.Controllers
                 RequiereCambioPassword = true
 
             };
-            using (var transaction = await _appDBcontext.Database.BeginTransactionAsync())
+            using (var transaction = await _appDBcontext.Database.BeginTransactionAsync()) //Inicia una transacción
             {
                 try
                 {
-                    _appDBcontext.Usuarios.Add(usuario);
-                    await _appDBcontext.SaveChangesAsync();
+                    _appDBcontext.Usuarios.Add(usuario); //Agrega el usuario a la base de datos
+                    await _appDBcontext.SaveChangesAsync(); //Guarda los cambios en la base de datos
                     await transaction.CommitAsync();
 
                     ViewData["Mensaje"] = "Usuario registrado exitosamente";
-                    return RedirectToAction("AdministrarUsuarios");
+                    return RedirectToAction("AdministrarUsuarios"); //Redirige a la vista de administración de usuarios
                 }
                 catch
                 {
-                    await transaction.RollbackAsync();
+                    await transaction.RollbackAsync(); //Revierte la transacción en caso de error
                     ViewData["Mensaje"] = "Error al guardar el usuario.";
                     return View();
                 }
@@ -80,28 +84,30 @@ namespace ProyectoParqueoFinal.Controllers
             
 
         }
+
+        //Controlador Post para la eliminacion de usuarios
         [Authorize(Roles = "Administrador")]
         [HttpPost]
         public async Task<IActionResult> EliminarUsuario(int IdUsuario)
         {
-            var usuario = await _appDBcontext.Usuarios.FindAsync(IdUsuario);
+            var usuario = await _appDBcontext.Usuarios.FindAsync(IdUsuario); //Busca el usuario por su ID
             if (usuario == null)
             {
                 return NotFound();
             }
-            using (var transaction = await _appDBcontext.Database.BeginTransactionAsync())
+            using (var transaction = await _appDBcontext.Database.BeginTransactionAsync()) //Inicia una transacción
             {
                 try
                 {
-                    _appDBcontext.Usuarios.Remove(usuario);
-                    await _appDBcontext.SaveChangesAsync();
+                    _appDBcontext.Usuarios.Remove(usuario); //Elimina el usuario
+                    await _appDBcontext.SaveChangesAsync(); //  Guarda los cambios en la base de datos
                     await transaction.CommitAsync();
                     ViewData["Mensaje"] = "Usuario eliminado exitosamente";
-                    return RedirectToAction("AdministrarUsuarios");
+                    return RedirectToAction("AdministrarUsuarios"); //Redirige a la vista de administración de usuarios
                 }
                 catch
                 {
-                    await transaction.RollbackAsync();
+                    await transaction.RollbackAsync(); //Revierte la transacción en caso de error
                     ViewData["Mensaje"] = "Error al eliminar el usuario.";
                     return View();
                 }

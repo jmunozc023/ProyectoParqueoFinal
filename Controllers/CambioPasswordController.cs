@@ -15,6 +15,7 @@ namespace ProyectoParqueoFinal.Controllers
             _appDBcontext = appDBContext;
         }
 
+        // Método para mostrar la vista de cambio de contraseña
         [HttpGet]
         public IActionResult CambiarPassword(string correo) // Método para mostrar la vista de cambio de contraseña
         {
