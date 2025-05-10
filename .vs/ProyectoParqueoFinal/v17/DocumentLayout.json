@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\controllers\\modificarparqueoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:controllers\\modificarparqueoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E34823D-3C56-4E29-99B7-00D5402932AB}|ProyectoParqueoFinal.csproj|c:\\users\\josep\\source\\repos\\proyectoparqueofinal\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -166,7 +166,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 559,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -182,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -190,25 +190,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T12:27:18.253Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T12:27:18.253Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ModificarVehiculosController.cs",
-              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\ModificarVehiculosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ModificarVehiculosController.cs",
-              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\ModificarVehiculosController.cs",
-              "RelativeToolTip": "Controllers\\ModificarVehiculosController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAYwDUAAACJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T07:30:39.353Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "PerfilUsuarioController.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\PerfilUsuarioController.cs",
               "RelativeDocumentMoniker": "Controllers\\PerfilUsuarioController.cs",
@@ -216,12 +202,11 @@
               "RelativeToolTip": "Controllers\\PerfilUsuarioController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T07:30:44.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T07:30:44.515Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ReportesController.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\ReportesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ReportesController.cs",
@@ -229,12 +214,11 @@
               "RelativeToolTip": "Controllers\\ReportesController.cs",
               "ViewState": "AgIAAHsAAAAAAAAAAAAAAJIAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T07:30:48.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T07:30:48.01Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SeguridadController.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\SeguridadController.cs",
               "RelativeDocumentMoniker": "Controllers\\SeguridadController.cs",
@@ -242,12 +226,11 @@
               "RelativeToolTip": "Controllers\\SeguridadController.cs",
               "ViewState": "AgIAAK4AAAAAAAAAAAA7wMAAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T06:02:57.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T06:02:57.962Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SeleccionParqueoController.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\SeleccionParqueoController.cs",
               "RelativeDocumentMoniker": "Controllers\\SeleccionParqueoController.cs",
@@ -255,12 +238,36 @@
               "RelativeToolTip": "Controllers\\SeleccionParqueoController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwBkAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T07:31:49.39Z",
+              "WhenOpened": "2025-04-21T07:31:49.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LogInController.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\LogInController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LogInController.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\LogInController.cs",
+              "RelativeToolTip": "Controllers\\LogInController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAhwCQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T07:30:27.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "ModificarVehiculosController.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\ModificarVehiculosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ModificarVehiculosController.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\ModificarVehiculosController.cs",
+              "RelativeToolTip": "Controllers\\ModificarVehiculosController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwDUAAACJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T07:30:39.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ModificarUsuariosController.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\ModificarUsuariosController.cs",
               "RelativeDocumentMoniker": "Controllers\\ModificarUsuariosController.cs",
@@ -268,12 +275,11 @@
               "RelativeToolTip": "Controllers\\ModificarUsuariosController.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAYwD4AAACHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T05:22:42.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T05:22:42.036Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ModificarParqueosController.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\ModificarParqueosController.cs",
               "RelativeDocumentMoniker": "Controllers\\ModificarParqueosController.cs",
@@ -281,21 +287,7 @@
               "RelativeToolTip": "Controllers\\ModificarParqueosController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAACKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T07:30:31.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LogInController.cs",
-              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\LogInController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LogInController.cs",
-              "ToolTip": "C:\\Users\\josep\\source\\repos\\ProyectoParqueoFinal\\Controllers\\LogInController.cs",
-              "RelativeToolTip": "Controllers\\LogInController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T07:30:27.172Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T07:30:31.521Z"
             },
             {
               "$type": "Document",
@@ -307,8 +299,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T07:30:24.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T07:30:24.048Z"
             },
             {
               "$type": "Document",
@@ -320,8 +311,7 @@
               "RelativeToolTip": "Controllers\\CambioPasswordController.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAgwBEAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T07:30:18.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T07:30:18.135Z"
             },
             {
               "$type": "Document",
@@ -333,8 +323,7 @@
               "RelativeToolTip": "Controllers\\AdministrarVehiculosController.cs",
               "ViewState": "AgIAAFwAAAAAAAAAAAAgwHUAAABxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T07:30:14.281Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T07:30:14.281Z"
             },
             {
               "$type": "Document",
@@ -346,8 +335,7 @@
               "RelativeToolTip": "Controllers\\AdministrarUsuariosController.cs",
               "ViewState": "AgIAAEEAAAAAAAAAAAAgwG0AAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T07:30:10.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T07:30:10.498Z"
             },
             {
               "$type": "Document",
@@ -359,8 +347,7 @@
               "RelativeToolTip": "Controllers\\AdministracionParqueoController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAYwEcAAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T07:30:05.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T07:30:05.645Z"
             },
             {
               "$type": "Document",
@@ -372,8 +359,7 @@
               "RelativeToolTip": "Views\\AdministrarUsuarios\\AdministrarUsuarios.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAE8AAABwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-21T07:32:30.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T07:32:30.22Z"
             },
             {
               "$type": "Document",
